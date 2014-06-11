@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.PhotoAlbum"
+    android:versionCode="2"
+    android:versionName="1.1">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name="com.PhotoAlbum.MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.PhotoAlbum.ImageDetailsActivity"
+            android:label="@string/app_name"           >            
+        </activity>
+    </application>
+    <!-- Devices >= 3 have version of Android Market that supports licensing. -->
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="17"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

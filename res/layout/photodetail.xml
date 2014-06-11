@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/detailImageView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/dateLayout"
+        android:gravity="center"
+        android:src="@drawable/icon" />
+
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" android:layout_margin="5dp"
+        android:layout_above="@+id/LocationLayout" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/ModifiedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="DIN OT"
+            android:maxLines="1"
+            android:text="sdgsdgsdfg" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LocationLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" android:layout_margin="5dp"
+        android:layout_alignParentBottom="true" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="DIN OT"
+            android:maxLines="1"
+            android:text="sdgsdgsdfg" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>
